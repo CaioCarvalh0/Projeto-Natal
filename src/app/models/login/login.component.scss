@@ -1,0 +1,25 @@
+.container-login{
+    width: 100%;
+    height: 100vh;
+    background: rgb(14, 14, 14);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow-y: auto;
+    transition: height 0.5s ease-in-out;
+}
+
+.container-form{
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+:host {
+    display: block;
+    overflow: hidden;
+  }
+

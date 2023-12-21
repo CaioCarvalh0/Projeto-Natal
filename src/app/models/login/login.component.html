@@ -1,0 +1,22 @@
+<div [@slideInOut]="state" class="container-login">
+  <div class="container-form p-10 w-96 flex shadow-2xl">
+    <form [formGroup]="FormCadastro" (submit)="buttonEnter()" class="flex flex-col gap-3">
+      <mat-form-field appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="email@exemplo.com" formControlName="email" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Senha</mat-label>
+        <input matInput placeholder="senha" formControlName="senha" />
+      </mat-form-field>
+      <button
+        class="cursor-pointer transition-all bg-red-600 text-white px-6 py-2 rounded-lg border-red-900 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+      >
+        Entrar
+      </button>
+    </form>
+  </div>
+</div>
+
+<app-body *ngIf="state != 'in' "></app-body>
